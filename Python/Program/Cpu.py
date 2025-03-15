@@ -2,7 +2,7 @@ from Komponen import Komponen
 
 class Cpu(Komponen):
     def __init__(self, jumlah_core, kecepatan_ghz, merk, nama):
-        Komponen.__init__(self, merk, nama)  # Memanggil konstruktor kelas induk
+        Komponen.__init__(self, merk, nama)  
         self.jumlah_core = jumlah_core
         self.kecepatan_ghz = kecepatan_ghz
 
