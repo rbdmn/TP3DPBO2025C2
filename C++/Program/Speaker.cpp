@@ -16,7 +16,7 @@ public:
 
     }
 
-    Speaker(int daya, int frekuensi, string nama, string merk) : Komponen(nama, merk)
+    Speaker(int daya, int frekuensi, string nama, string merk, string jenis_komponen) : Komponen(nama, merk, jenis_komponen)
     {
         this->daya = daya;
         this->frekuensi = frekuensi;

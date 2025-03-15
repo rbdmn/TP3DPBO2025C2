@@ -1,8 +1,8 @@
 from Komponen import Komponen
 
 class Mouse(Komponen):
-    def __init__(self, dpi, jenis_koneksi, merk, nama):
-        Komponen.__init__(self, merk, nama) 
+    def __init__(self, dpi, jenis_koneksi, merk, nama, jenis_komponen):
+        super().__init__(merk, nama, jenis_komponen)
         self.dpi = dpi
         self.jenis_koneksi = jenis_koneksi
 

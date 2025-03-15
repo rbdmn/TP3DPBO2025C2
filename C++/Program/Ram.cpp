@@ -19,7 +19,7 @@ public:
     }
 
 
-    Ram(int kapasitasGB, string ddr, string merk, string nama) : Komponen(merk, nama)
+    Ram(int kapasitasGB, string ddr, string merk, string nama, string jenis_komponen) : Komponen(merk, nama, jenis_komponen)
     {
         this->kapasitasGB = kapasitasGB;
         this->ddr = ddr;

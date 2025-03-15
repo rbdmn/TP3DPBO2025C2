@@ -1,8 +1,8 @@
 from Komponen import Komponen
 
 class Cpu(Komponen):
-    def __init__(self, jumlah_core, kecepatan_ghz, merk, nama):
-        Komponen.__init__(self, merk, nama)  
+    def __init__(self, jumlah_core, kecepatan_ghz, merk, nama, jenis_komponen):
+        super().__init__(merk, nama, jenis_komponen)
         self.jumlah_core = jumlah_core
         self.kecepatan_ghz = kecepatan_ghz
 

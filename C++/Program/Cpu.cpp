@@ -20,7 +20,7 @@ public:
     }
 
 
-    Cpu(int jumlahCore, float kecepatanGHz, string merk, string nama) : Komponen(merk, nama)
+    Cpu(int jumlahCore, float kecepatanGHz, string merk, string nama, string jenis_komponen) : Komponen(merk, nama, jenis_komponen)
     {
         this->jumlahCore = jumlahCore;
         this->kecepatanGHz = kecepatanGHz;

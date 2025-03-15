@@ -1,8 +1,8 @@
 from Komponen import Komponen
 
 class Ram(Komponen):
-    def __init__(self, kapasitas_gb, ddr, merk, nama):
-        Komponen.__init__(self, merk, nama)
+    def __init__(self, kapasitas_gb, ddr, merk, nama, jenis_komponen):
+        super().__init__(merk, nama, jenis_komponen)
         self.kapasitas_gb = kapasitas_gb
         self.ddr = ddr
 

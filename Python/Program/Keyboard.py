@@ -1,8 +1,8 @@
 from Komponen import Komponen
 
 class Keyboard(Komponen):
-    def __init__(self, jenis, backlight, merk, nama):
-        Komponen.__init__(self, merk, nama)  
+    def __init__(self, jenis, backlight, merk, nama, jenis_komponen):
+        super().__init__(merk, nama, jenis_komponen)
         self.jenis = jenis
         self.backlight = backlight
 

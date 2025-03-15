@@ -1,6 +1,6 @@
 from Cpu import Cpu
 from Ram import Ram
-from Harddrive import Harddrive
+from HDD import HDD
 from VGA import VGA
 from SSD import SSD
 from Keyboard import Keyboard
@@ -8,12 +8,12 @@ from Mouse import Mouse
 from Speaker import Speaker
 
 class Komputer:
-    def __init__(self, nama, merk, cpu, ram_list, harddrive, vga, ssd, keyboard, mouse, speaker):
+    def __init__(self, nama, merk, cpu, ram_list, hdd, vga, ssd, keyboard, mouse, speaker):
         self.nama = nama
         self.merk = merk
         self.cpu = cpu
         self.ram_list = ram_list
-        self.harddrive = harddrive
+        self.hdd = hdd
         self.vga = vga
         self.ssd = ssd
         self.keyboard = keyboard
@@ -33,7 +33,7 @@ class Komputer:
         return self.ram_list
 
     def get_harddrive(self):
-        return self.harddrive
+        return self.hdd
 
     def get_vga(self):
         return self.vga

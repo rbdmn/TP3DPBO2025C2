@@ -18,22 +18,24 @@ int main()
 {
     ios::sync_with_stdio(0); cin.tie();
 
-    Cpu cpu(8, 3.4, "Intel", "Core i7");
-    Ram ram1(16, "DDR5", "Corsair", "Vengeance");
-    Ram ram2(8, "DDR4", "Corsair", "Vengeance");
-    HDD hdd(1024, "CBS NETWORK", "Sandisk");
-    VGA vga(8, "NVIDIA", "RTX 3080");
-    SSD ssd(512, "PopolKupa", "Seagate");
+    Cpu cpu(8, 3.4, "Intel", "Core i7", "Hardware Internal");
+    Ram ram1(16, "DDR5", "Corsair", "Vengeance", "Hardware Internal");
+    Ram ram2(8, "DDR4", "Corsair", "Vengeance", "Hardware Internal");
+    HDD hdd(1024, "CBS NETWORK", "Sandisk", "Hardware Internal");
+    VGA vga(8, "NVIDIA", "RTX 3080", "Hardware Internal");
+    SSD ssd(512, "PopolKupa", "Seagate", "Hardware Internal");
 
-    Keyboard keyboard("Mechanical", "RGB", "Logitech", "G Pro X");
-    Mouse mouse(1600, "Bluetooth", "Razer", "DeathAdder");
-    Speaker speaker(50, 20, "JBL", "Flip 5");
+    Keyboard keyboard("Mechanical", "RGB", "Logitech", "G Pro X", "Hardware Periferal");
+    Mouse mouse(1600, "Bluetooth", "Razer", "DeathAdder", "Hardware Periferal");
+    Speaker speaker(50, 20, "JBL", "Flip 5", "Hardware Periferal");
 
     Komputer komputer("PCIDAMAN", "Samsung", cpu, {ram1, ram2}, hdd, vga, ssd, keyboard, mouse, speaker);
 
     cout << "=== Informasi Komputer ===" << endl;
     cout << "Nama Komputer: " << komputer.getNama() << endl;
     cout << "Merk Komputer: " << komputer.getMerk() << endl;
+
+    cout << "\n===[HARDWARE INTERNAL]===" << endl;
     cout << "CPU: " << komputer.getCpu().getMerk() << " " << komputer.getCpu().getNama()
          << " (" << komputer.getCpu().getJumlahCore() << " Core, " << komputer.getCpu().getKecepatanGHz() << " GHz)" << endl;
 
@@ -51,7 +53,8 @@ int main()
     cout << "SSD: " << komputer.getSsd().getMerk() << " " << komputer.getSsd().getNama()
          << " (" << komputer.getSsd().getKapasitasGB() << " GB)" << endl;
 
-    cout << "\n=== Informasi Keyboard ===" << endl;
+     cout << "\n===[HARDWARE PERIFERAL]===" << endl;
+    cout << "=== Informasi Keyboard ===" << endl;
     cout << "Merk: " << komputer.getKeyboard().getMerk() << endl;
     cout << "Nama: " << komputer.getKeyboard().getNama() << endl;
     cout << "Jenis: " << komputer.getKeyboard().getJenis() << endl;

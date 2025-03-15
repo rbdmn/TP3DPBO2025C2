@@ -16,7 +16,7 @@ public:
 
     } 
 
-    Mouse(int dpi, string jenis_koneksi, string nama, string merk) : Komponen(nama, merk)
+    Mouse(int dpi, string jenis_koneksi, string nama, string merk, string jenis_komponen) : Komponen(nama, merk, jenis_komponen)
     {
         this->dpi = dpi;
         this->jenis_koneksi = jenis_koneksi;

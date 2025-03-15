@@ -15,7 +15,7 @@ public:
     {
     }
 
-    HDD(int kapasitasGB, string merk, string nama) : Komponen(merk, nama)
+    HDD(int kapasitasGB, string merk, string nama, string jenis_komponen) : Komponen(merk, nama, jenis_komponen)
     {
         this->kapasitasGB = kapasitasGB;
     }

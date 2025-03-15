@@ -16,7 +16,7 @@ public:
 
     } 
 
-    Keyboard(string jenis, string backlight, string nama, string merk) : Komponen(nama, merk)
+    Keyboard(string jenis, string backlight, string nama, string merk, string jenis_komponen) : Komponen(nama, merk, jenis_komponen)
     {
         this->jenis = jenis;
         this->backlight = backlight;

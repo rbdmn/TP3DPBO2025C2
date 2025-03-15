@@ -10,6 +10,7 @@ class Komponen {
 private:
     string merk;
     string nama;
+    string jenis_komponen;
 public:
     Komponen()
     {
@@ -18,10 +19,11 @@ public:
     }
 
 
-    Komponen(string merk, string nama)
+    Komponen(string merk, string nama, string jenis_komponen)
     {
         this->merk = merk;
         this->nama = nama;
+        this->jenis_komponen = jenis_komponen;
     }
 
 
@@ -35,6 +37,10 @@ public:
         this->nama = nama;
     }
 
+    void setJenis_Komponen(string jenis_komponen)
+    {
+        this->jenis_komponen = jenis_komponen;
+    }
 
     string getMerk()
     {
@@ -43,6 +49,10 @@ public:
     string getNama()
     {
         return nama;
+    }
+    string getJenis_Komponen()
+    {
+        return jenis_komponen;
     }
 
 

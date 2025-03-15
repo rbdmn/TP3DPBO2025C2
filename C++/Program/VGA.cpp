@@ -15,7 +15,7 @@ public:
 
     } 
 
-    VGA(int memoryGB, string merk, string nama) : Komponen(merk, nama)
+    VGA(int memoryGB, string merk, string nama, string jenis_komponen) : Komponen(merk, nama, jenis_komponen)
     {
         this->memoryGB = memoryGB;
     }
